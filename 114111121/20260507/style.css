@@ -1,0 +1,95 @@
+/*視窗背景色設定*/
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+/*頁首,導航,頁尾的共通設定*/
+header,nav,footer {
+  text-align: left;
+}
+
+/*內容區塊邊框設定*/
+#contents {
+    width: 800px;
+    margin: 40px auto;
+    padding: 40px 80px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #fff;
+}
+
+/*頁面標題設定*/
+h1 {
+  width: 300px;
+  margin: left;
+  padding: 0px;
+  color: #a0a0a0;
+  text-align: left;
+}
+
+/*次標題設定*/
+h2 {
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px dotted rgb(255, 255, 255);
+    border-left: 10px solid rgb(208, 207, 209);
+    color: rgb(173, 173, 173);
+    border-radius: 5px 0 0 5px;
+}
+
+/*按鈕基本樣式*/
+.entryBtns input{
+  margin: 20px 10px ;
+  padding: 10px;
+  background: #e0dede;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em ;
+  -webkit-appearance: none;
+}
+
+/*按鈕設定*/
+.entryBtns {
+  text-align:center;
+}
+.entryBtns input {
+  width: 300px;
+  color: #fff;
+}
+
+.button{
+  width: 200px;
+  margin: 0 10px;
+  background: #ffffff;
+  border: 1px  #999592;
+  display: flex;
+  gap: 20px;
+}
+
+/*滑鼠指標樣式*/
+label,
+select{
+  cursor: pointer;
+}
+
+
+/*文繞圖設定*/
+.box {
+    text-align: center;
+}
+
+.form-group {
+  margin-bottom: 40px;
+}
+
+input[type="text"]{
+  border: none;
+  border-bottom: 2px solid gray;
+  width: 800px;
+  height: 40px;
+  font-size: 15px;
+  outline: none;
+}
+
+small {
+  color: #999592;
+}

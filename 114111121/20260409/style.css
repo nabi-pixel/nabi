@@ -1,0 +1,171 @@
+/*背景顏色設定*/
+body {
+    /*
+    background-color: rgba(245, 228, 228, 0.39);
+    background-image: url(img/bg.png);
+    background-repeat: repeat-x; 
+    */
+    background: rgba(245, 228, 228, 0.39) url(img/bg.png) repeat-x;
+    /*背景圖重複方向-水平重複*/
+}
+
+/*連結顏色設定*/
+a {
+    color: rgba(192, 164, 72, 0.801);
+}
+
+a:hover {
+    color: #c79292;
+    /*滑鼠移入時會變色*/
+    text-decoration: none;
+    /*無底線*/
+}
+
+/*首頁,導覽,首尾共通設定*/
+header,
+nav,
+footer {
+    text-align: center;
+}
+
+/*導覽樣式設定*/
+.menu li {
+    list-style-type: none;
+    /*刪除不要的點*/
+    display: inline-block;
+    /*水平並排*/
+    width: 180px;
+    margin: 0 10px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    background: #5c4f4fda;
+    border-radius: 8px;
+    color: #f1e9e9;
+    text-decoration: none;
+}
+
+/*滑鼠移入時會變色*/
+.menu a:hover {
+    background: #d8b1b1;
+}
+
+/*頁面標題設定*/
+h1 {
+    width: 300px;
+    margin: 40px auto;
+    /*外側邊界,auto為自動計算值→水平置中(前提是要有width)*/
+    padding: 30px;
+    /*內側邊界*/
+    border: 5px solid #ffffff;
+    /*框框邊界,solid為線的種類設定*/
+    background-color: rgb(202, 124, 124);
+    color: rgb(255, 255, 255);
+    font-size: 300%;
+    /*字型大小*/
+    text-align: center;
+    /*對齊方式*/
+    line-height: 1;
+    /*行高*/
+    border-radius: 50%;
+    /*圓角半徑*/
+    text-shadow: 1px 1px 2px #3a2323;
+    /*立體字→水平位移x 垂直位移y 模糊強度 陰影色*/
+    box-shadow: 0 0 10px rgba(131, 98, 90, 0.801);
+    /*立體邊框→水平位移x 垂直位移y 模糊強度 陰影色*/
+    background-image: linear-gradient(to bottom, #d1a9a9, #c77777);
+    /*LOGO漸層(角度,色彩端點,色彩端點)*/
+    font-family: "Limelight", sans-serif
+}
+
+/*次標題設定*/
+h2 {
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px dotted #ad4b4b;
+    border-left: 10px solid #994242;
+    color: #685953;
+    border-radius: 5px 0 0 5px;
+}
+
+/*小標題設定*/
+.h-sub span {
+    font-weight: normal;
+}
+
+.h-sub {
+    padding: 10px;
+    background-color: #dbb1b1;
+    color: #554944;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px #a16d6d inset;
+}
+
+/*內容區塊邊框設定*/
+#contents {
+    width: 798px;
+    margin: 40px auto;
+    padding: 40px 80px;
+    border: 1px solid #aa6666;
+    background-color: #ffffff;
+}
+
+/*[更多介紹]連結設定*/
+.more {
+    text-align: right;
+}
+
+/*.more後面的位置*/
+.more::after {
+    content: url(img/ico_arrow.png);
+    margin-left: 3px;
+    vertical-align: middle;
+    /**/
+}
+
+/*區塊間分隔*/
+#contents>section+section {
+    margin-top: 80px;
+}
+
+/*連結圖示設定*/
+a[target="_blank"]::after {
+    content: url(img/ico_blank.png);
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+a[href^="mailto"]::after {
+    content: url(img/ico_mail.png);
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/*文繞圖設定*/
+.imgL {
+    float: left;
+    margin-right: 20px;
+}
+
+.imgR {
+    float: right;
+    margin-left: 20px;
+}
+
+/*解除float*/
+.clear {
+    clear: both;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.img-round {
+    border-radius: 50%;
+    /*圓角半徑*/
+}

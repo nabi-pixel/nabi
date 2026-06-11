@@ -1,0 +1,150 @@
+body {
+    background: rgba(245, 228, 228, 0.39) repeat-x;
+}
+
+a {
+    color: rgba(192, 164, 72, 0.801);
+}
+
+a:hover {
+    color: #c79292;
+    /*滑鼠移入時會變色*/
+    text-decoration: none;
+    /*無底線*/
+}
+
+header,
+nav {
+    text-align: center;
+}
+
+.menu li {
+    list-style-type: none;
+    display: inline-block;
+    width: 180px;
+    margin: 0 10px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    background: #5c4f4fda;
+    border-radius: 8px;
+    color: #f1e9e9;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background: #d8b1b1;
+}
+
+#contents {
+    width: 798px;
+    margin: 40px auto;
+    padding: 40px 80px;
+    border: 1px solid #aa6666;
+    background-color: #ffffff;
+}
+
+#contents>section+section {
+    margin-top: 80px;
+}
+
+h1 {
+    width: 300px;
+    margin: 40px auto;
+    padding: 30px;
+    color: #5c4f4fda;
+    font-size: 250%;
+    text-align: center;
+    border: 5px solid #ffffff;
+    background-color: rgb(100, 75, 75);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+h2 {
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px dotted #ad4b4b;
+    border-left: 10px solid #994242;
+    color: #685953;
+    border-radius: 5px 0 0 5px;
+}
+
+.more {
+    text-align: right;
+}
+
+.more::after {
+    content: url(img/ico_arrow.png);
+    margin-left: 3px;
+    vertical-align: middle;
+}
+
+.imgL {
+    float: left;
+    margin-right: 20px;
+}
+
+.progress-box {
+    width: 300px;
+    height: 25px;
+    border: 2px solid #685953;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #eee;
+}
+
+.progress-bar1 {
+    height: 100%;
+    width: 75%;
+    background-color: #aa6666;
+    text-align: center;
+    color: white;
+    line-height: 25px;
+    transition: 0.3s;
+}
+
+.progress-bar2 {
+    height: 100%;
+    width: 85%;
+    background-color: #aa6666;
+    text-align: center;
+    color: white;
+    line-height: 25px;
+    transition: 0.3s;
+}
+
+#contents>section+section {
+    margin-top: 80px;
+}
+
+.box {
+    width: 600px;
+    padding: 20px;
+    background-color: #f5f5f500;
+    border: 2px solid #685953;
+    border-radius: 20px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.card {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #685953;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+}
+
+.item {
+    margin-bottom: 10px;
+}
+
+.label {
+    font-weight: bold;
+}

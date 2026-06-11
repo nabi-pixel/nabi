@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>捐贈登記</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" media="all">
+    <title>Document</title>
+</head>
+<body>
+<main id="contents">
+    <div class="box">
+    <img src="img_dogs.jpg" width="800" height="500" alt="dogs" >
+    </div>
+  <form id="entryForm" action="#" method="post">
+   <table class="entryTable">
+    <header>
+    <h1>捐款登記_Template</h1>
+    <p>謝謝您願意幫助需要幫助的毛孩們！ <br>麻煩花幾分鐘將您此次想捐贈的資訊填妥，我們會盡快處理替您將愛送達！</p>
+    </header>
+    <div class="form-group">
+    <h2>捐贈者資料</h2>
+    <h3>1 您的姓名：</h3>
+    <input type="text" name="name" required placeholder="請填入文字">
+    <h3>2 您的聯絡電話：</h3>
+    <input type="text" name="num" required placeholder="請填入電話號碼">
+    <h3>3 您的聯絡地址：</h3>
+    <small>請務必提供正確地址，以方便我們寄送捐款證明</small> <br>
+    <input type="text" name="name" required placeholder="請填入文字">
+    </div>
+
+    <h2>捐款資訊</h2>
+    <h3>4 您願意捐款的金額：</h3>
+    <small>需介於 0 ~ 20000 之間 可接受到小數點第 0 位</small> <br>
+    <input type="text" name="num" required placeholder="請填入數字">
+    <h3>5 匯款帳戶後五碼：</h3>
+    <input type="text" name="name" required placeholder="請填入文字">
+    <h3>6 是否願意公開此次捐款？</h3>
+    <small>我們會在網站上公開感謝每位捐款人，如果您不願意公開身份，請選不願意</small> <br>
+    <div class="button">   
+        <input type="radio" name="sex" id="yes" value="願意" checked>
+        <label for="yes">願意</label>
+        <input type="radio" name="sex" id="no" value="不願意">
+        <label for="no">不願意</label>
+    </div> 
+    <h3>7 是否有其他疑問，或需要我們注意的地方？</h3>
+    <textarea name="comment" cols="107" rows="8" required placeholder="請填入文字"></textarea>
+    </table>
+    <div class="entryBtns">
+    <input type="submit" value="送出">
+   </div>
+   </form>
+   <footer>
+  <p><small>隱私權文字</small></p>
+</footer>
+</main>
+</body>
+</html>
